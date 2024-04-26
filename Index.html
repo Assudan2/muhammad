@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width">
+    <title>Welcome</title>
+    <style>
+        body{
+            text-align:center;
+        }
+        
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+        .h{
+          margin-top: 50%;
+          background: #f1f1f1;
+          padding:20px;
+          width: 30px;
+          height: 30px;
+          margin-left:40%;
+          border-radius: 50%;
+          color:#04aa6d
+        }
+        .span{
+            //font-size: 90px;
+            color:#04aa6d;
+            -webkit-animation-duration:3s;
+            -webkit-animation-name:assudan;
+        }
+        @-webkit-keyframes assudan{
+            from{
+                margin-left:100%;
+                width: 300%;
+            }
+            to{
+              margin-left:0%;
+                width: 100%;  
+            }
+        }
+        button{
+            under-line:none;
+            border:1px solid #04aa6d;
+            background: #04aa6d;
+            color:#0bffff;
+            font-size:30px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .div{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <div id="0">
+    <h1 class="h">@</h1>
+    <span class="dot" id="1"></span>
+    <span class="dot" id="2"></span>
+    <span class="dot" id="3"></span>
+    <span class="dot" id="4"></span>
+    <span class="dot" id="5"></span>
+    <span style="color:#04aa6d"><h1>@ssudan</h1></span>
+    </div>
+    <div id="div" class="div">
+        <span><h1 class="span">@ssudan</h1></span>
+        <h2>Welcome to <strong>@ssudan</strong> Sign Up and Log In page this will direct the user to sign Up means to create new account or Log In mean to Log in into existing account thanks you for coming</h2>
+        <a href="signup.html" style="float:left;"><button>Sign Up</button></a><a href="login.html" style="float:right;"><button>Log In</button></a>
+    </div>
+    <script src="myscript.js"></script>
+    <script>
+ 
+ function load(n) {      
+ document.getElementById(n).style.background="#04aa6d";
+ }
+ function remove(r) {      
+ document.getElementById(r).style.background="#bbb";
+ }
+ setTimeout('load("1")',1000);
+ setTimeout('remove("1")',3000);
+ setTimeout('load("1")',5000);
+ setTimeout('load("2")',6000);
+ setTimeout('load("3")',9000);
+ setTimeout('remove("3")',11000);
+ setTimeout('load("3")',12000);
+ setTimeout('load("4")',13000);
+ setTimeout('load("5")',15000);
+ function login() {
+   location.replace('login.html');  
+ }
+    </script>
+</body>
+</html>
